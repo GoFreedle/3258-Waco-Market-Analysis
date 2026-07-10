@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Comparative Market Analysis | 3258 S Waco Court #J</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #5EA1C3;
+    --gold: #FFD372;
+    --gray: #575B5C;
+    --tan: #85714D;
+    --navy: #3057A7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    color: var(--gray);
+    background: #FBFBFA;
+    line-height: 1.6;
+  }
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 0 0 60px 0;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+    padding: 40px 48px;
+    color: #ffffff;
+  }
+  .header .eyebrow {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 6px 0;
+  }
+  .header .sub {
+    font-size: 15px;
+    font-weight: 300;
+    color: #EAF3F8;
+  }
+  .header .prepared {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #D6E8F1;
+  }
+  .content { padding: 40px 48px 0 48px; }
+  h2.section-title {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 10px;
+    margin: 44px 0 20px 0;
+  }
+  h3.sub-title {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--gray);
+    margin: 26px 0 10px 0;
+  }
+  p { font-size: 14.5px; margin: 0 0 14px 0; }
+  .stat-grid {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+  }
+  .stat-row { display: table-row; }
+  .stat-label, .stat-value {
+    display: table-cell;
+    padding: 9px 14px;
+    font-size: 14px;
+    border-bottom: 1px solid #ECECEC;
+  }
+  .stat-label { color: var(--tan); font-weight: 500; width: 40%; }
+  .stat-value { color: var(--gray); }
+  .callout {
+    background: #F3F9FB;
+    border-left: 4px solid var(--blue);
+    padding: 18px 22px;
+    margin: 18px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .price-banner {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 28px;
+    border-radius: 8px;
+    margin: 20px 0 30px 0;
+    text-align: center;
+  }
+  .price-banner .amount {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .price-banner .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #C9DDEE;
+    margin-bottom: 6px;
+  }
+  .price-banner .range {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #EAF3F8;
+  }
+  ul.key-points { margin: 0 0 14px 0; padding-left: 20px; }
+  ul.key-points li { font-size: 14.5px; margin-bottom: 10px; }
+  table.comps {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 6px 0;
+    font-size: 13px;
+  }
+  table.comps th {
+    background: var(--navy);
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 8px;
+    text-align: left;
+  }
+  table.comps td {
+    padding: 9px 8px;
+    border-bottom: 1px solid #ECECEC;
+  }
+  table.comps tr:nth-child(even) td { background: #F9FBFC; }
+  table.comps tr.best-comp td { background: #FFF6DF; font-weight: 500; }
+  table.comps tr.caution-comp td { color: var(--tan); }
+  .badge {
+    display: inline-block;
+    font-size: 10.5px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 6px;
+    text-transform: uppercase;
+  }
+  .badge-best { background: var(--gold); color: #4A3A00; }
+  .badge-watch { background: #EFE3D0; color: var(--tan); }
+  table.strategy {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14px;
+  }
+  table.strategy th {
+    background: var(--blue);
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: left;
+  }
+  table.strategy td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #ECECEC;
+    vertical-align: top;
+  }
+  table.strategy tr.recommended td { background: #F3F9FB; font-weight: 500; }
+  .next-steps { margin: 0; padding-left: 0; list-style: none; }
+  .next-steps li {
+    font-size: 14.5px;
+    padding: 10px 0 10px 30px;
+    position: relative;
+    border-bottom: 1px solid #ECECEC;
+  }
+  .next-steps li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-weight: 700;
+  }
+  .disclaimer {
+    font-size: 12.5px;
+    color: var(--tan);
+    font-style: normal;
+    background: #FBF7ED;
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin-top: 16px;
+  }
+  .footer {
+    margin-top: 50px;
+    padding: 26px 48px;
+    background: var(--gray);
+    color: #E7E7E7;
+    font-size: 12.5px;
+    text-align: center;
+  }
+  .footer .tagline {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--gold);
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="eyebrow">Comparative Market Analysis</div>
+    <h1>3258 S Waco Court #J</h1>
+    <div class="sub">Aurora, CO 80013 &nbsp;•&nbsp; Stone Canyon</div>
+    <div class="prepared">Prepared by Freedle And Associates &nbsp;|&nbsp; July 9, 2026</div>
+  </div>
+
+  <div class="content">
+
+    <h2 class="section-title">Subject Property</h2>
+    <div class="stat-grid">
+      <div class="stat-row"><div class="stat-label">Property Type</div><div class="stat-value">Condominium, Stone Canyon</div></div>
+      <div class="stat-row"><div class="stat-label">Bedrooms</div><div class="stat-value">2</div></div>
+      <div class="stat-row"><div class="stat-label">Bathrooms</div><div class="stat-value">2</div></div>
+      <div class="stat-row"><div class="stat-label">Square Footage</div><div class="stat-value">988 SF</div></div>
+      <div class="stat-row"><div class="stat-label">Parking</div><div class="stat-value">1-car garage</div></div>
+      <div class="stat-row"><div class="stat-label">Condition</div><div class="stat-value">Personally viewed — good overall condition with newer HVAC and kitchen appliances; similar aesthetic condition to the Zeno Court comp</div></div>
+    </div>
+
+    <h2 class="section-title">Executive Summary</h2>
+    <p>3258 S Waco Court #J is a 2 bedroom, 2 bathroom condominium with 988 square feet and a one car garage in the Stone Canyon community. Now that the unit has been viewed in person, it's in good overall condition, with newer HVAC and kitchen appliances as standout updates, and a similar aesthetic condition to the Zeno Court comp. Between the comparable finish level and the mechanical and appliance updates, the unit offers real, practical value to buyers.</p>
+
+    <div class="price-banner">
+      <div class="label">Suggested List Price</div>
+      <div class="amount">$290,000</div>
+      <div class="range">Anticipated sale price: $280,000 – $285,000</div>
+    </div>
+
+    <h3 class="sub-title">A Few Things Worth Keeping in Mind</h3>
+    <ul class="key-points">
+      <li>The most useful comp is 3258 S Zeno Court #J, in the same complex and the same 988 SF, which closed at $290,000 in 19 days. It's a helpful benchmark for where buyer demand has landed recently.</li>
+      <li>18388 E Eldorado Place #J is the same square footage and has been on the market 35+ days at $315,000. It hasn't sold yet, which may suggest that price point is a bit of a stretch for a 988 SF unit right now, though it's just one data point.</li>
+      <li>It's early July, and the buyer pool has historically softened a bit once school starts in August. Listings that linger closer to the 30-day mark sometimes benefit from a pricing refresh to regenerate interest.</li>
+      <li>Buyers currently appear to have some room to negotiate, so it may be reasonable to expect offers to land a little under list rather than at or above it.</li>
+    </ul>
+
+    <div class="disclaimer">
+      This pricing reflects an in-person viewing of the unit. Condition and updates noted (newer HVAC, kitchen appliances, similar aesthetic condition to the Zeno Court comp) were confirmed firsthand.
+    </div>
+
+    <h2 class="section-title">Stone Canyon Direct Complex Comps</h2>
+    <p>Same community as the subject property.</p>
+    <table class="comps">
+      <tr>
+        <th>Address</th><th>Status</th><th>Price</th><th>DOM</th><th>SF</th><th>Bed</th><th>Bath</th><th>$/SF</th>
+      </tr>
+      <tr><td>18241 E Flora Place #C</td><td>Closed</td><td>$323,000</td><td>73</td><td>1,060</td><td>2</td><td>1</td><td>$305</td></tr>
+      <tr><td>18388 E Eldorado Place #F</td><td>Active</td><td>$319,000</td><td>104</td><td>1,298</td><td>2</td><td>2</td><td>$246</td></tr>
+      <tr class="caution-comp"><td>18388 E Eldorado Place #J <span class="badge badge-watch">Watch</span></td><td>Active</td><td>$315,000</td><td>35</td><td>988</td><td>2</td><td>2</td><td>$319</td></tr>
+      <tr><td>3216 S Walden Court #L</td><td>Closed</td><td>$312,000</td><td>34</td><td>1,096</td><td>2</td><td>2</td><td>$285</td></tr>
+      <tr><td>18388 E Eldorado Place #K</td><td>Active</td><td>$310,000</td><td>40</td><td>1,014</td><td>2</td><td>2</td><td>$306</td></tr>
+      <tr><td>3241 S Yampa Way #H</td><td>Closed</td><td>$310,000</td><td>76</td><td>1,060</td><td>2</td><td>1</td><td>$292</td></tr>
+      <tr><td>18201 E Greenwood Drive #A</td><td>Pending</td><td>$300,000</td><td>59</td><td>1,096</td><td>2</td><td>2</td><td>$274</td></tr>
+      <tr class="best-comp"><td>3258 S Zeno Court #J <span class="badge badge-best">Best Comp</span></td><td>Closed</td><td>$290,000</td><td>19</td><td>988</td><td>2</td><td>2</td><td>$294</td></tr>
+      <tr><td>3261 S Waco Court #B</td><td>Closed</td><td>$286,000</td><td>222</td><td>1,014</td><td>2</td><td>2</td><td>$282</td></tr>
+      <tr><td>3233 S Zeno Court #E</td><td>Closed</td><td>$250,000</td><td>30</td><td>1,060</td><td>2</td><td>1</td><td>$236</td></tr>
+    </table>
+
+    <div class="callout">
+      <p><strong>Best Comp — 3258 S Zeno Court #J:</strong> This is the strongest available comp: same complex, the exact same 988 square feet, and it closed at $290,000 ($294/SF) in 19 days. It's a reasonable reflection of buyer demand at that price point earlier this year.</p>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--tan);">
+      <p><strong>Worth Watching — 18388 E Eldorado Place #J:</strong> Same 988 SF as the subject, currently active at $315,000, but sitting for 35+ days without a contract. That combination may point to some price resistance at that level, so it's probably better used as a data point to watch rather than a pricing benchmark.</p>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--tan);">
+      <p><strong>Also Worth Noting — 3261 S Waco Court #B:</strong> This one originally listed at $325,000 and closed at $286,000 after 222 days, about a $39,000 adjustment from original list. It's a reminder that listings sitting well past 30 days sometimes need a meaningful price adjustment to get moving again.</p>
+    </div>
+
+    <h2 class="section-title">Broader Market Context</h2>
+    <p>2-mile radius, 2 bed / 2 bath condos within roughly 300 SF of the subject (688–1,288 SF).</p>
+    <table class="comps">
+      <tr>
+        <th>Address / Complex</th><th>Status</th><th>Price</th><th>DOM</th><th>SF</th><th>$/SF</th>
+      </tr>
+      <tr><td>19303 E Asbury Dr, Villas at Great Plains</td><td>Active</td><td>$444,900</td><td>130</td><td>1,282</td><td>$347</td></tr>
+      <tr><td>18930 E Warren Circle, Villas at Aspen</td><td>Pending</td><td>$311,000</td><td>45</td><td>1,281</td><td>$243</td></tr>
+      <tr><td>2521 S Bahama Circle, Rock Ridge</td><td>Active</td><td>$305,000</td><td>39</td><td>1,096</td><td>$278</td></tr>
+      <tr><td>18761 E Water Drive #C, Rock Ridge</td><td>Active</td><td>$305,000</td><td>333</td><td>988</td><td>$309</td></tr>
+      <tr><td>2662 S Cathay Way, Balterra</td><td>Active</td><td>$295,000</td><td>105</td><td>1,085</td><td>$272</td></tr>
+      <tr><td>2521 S Bahama Circle, Rock Ridge</td><td>Closed</td><td>$285,000</td><td>13</td><td>988</td><td>$288</td></tr>
+      <tr><td>4450 S Pitkin Street, Meadow Point</td><td>Active</td><td>$269,000</td><td>224</td><td>1,040</td><td>$259</td></tr>
+      <tr><td>18909 E Warren Circle, Villas at Aspen</td><td>Closed</td><td>$264,000</td><td>218</td><td>1,013</td><td>$261</td></tr>
+      <tr><td>2551 S Bahama Circle, Rock Ridge</td><td>Closed</td><td>$280,000</td><td>81</td><td>988</td><td>$283</td></tr>
+      <tr><td>19019 E Warren Drive, Villas at Aspen</td><td>Closed</td><td>$245,000</td><td>65</td><td>1,013</td><td>$242</td></tr>
+    </table>
+    <p style="margin-top: 14px;">Most 988 SF, 2 bed/2 bath condos in this radius are trading in the high $270,000s to high $290,000s. The outliers on either end generally trace back to superior finish or location (Villas at Great Plains at $347/SF) or to extended market time that appears to have influenced pricing downward (Meadow Point and Villas at Aspen units sitting 200+ days).</p>
+
+    <h2 class="section-title">Seasonal Timing</h2>
+    <p>It's early July, and the buyer pool has tended to thin out somewhat once school starts in August. Showings can slow, and homes still on the market may start to feel less fresh to buyers who've seen them in earlier search results for a few weeks running.</p>
+
+    <h3 class="sub-title">Listings Approaching or Past 30 Days</h3>
+    <ul class="key-points">
+      <li>18388 E Eldorado Place #J: 35+ days active, no contract yet, priced at $315,000</li>
+      <li>18761 E Water Drive #C (Rock Ridge): 333 days active</li>
+      <li>4450 S Pitkin Street (Meadow Point): 224 days active</li>
+      <li>3261 S Waco Court #B: 222 days before closing, about $39,000 under original list</li>
+    </ul>
+    <p>By comparison, 3258 S Zeno Court #J closed in 19 days, inside a window where buyer interest tends to be more active.</p>
+
+    <div class="callout">
+      <p><strong>Timing Consideration:</strong> If this listing goes live in the next 1–2 weeks, there may be roughly a 3–4 week window of typical summer activity before things could slow with the school year. Pricing closer to the middle of the range, rather than testing the top, may help reduce the chance of the listing sitting longer than preferred as that seasonal shift approaches.</p>
+    </div>
+
+    <h2 class="section-title">Pricing Strategy</h2>
+    <table class="strategy">
+      <tr><th>Strategy</th><th>Price</th><th>Rationale</th></tr>
+      <tr><td>Aggressive Move</td><td>$285,000</td><td>Prices below the Zeno Court closing comp to prioritize speed, which may leave some value on the table</td></tr>
+      <tr class="recommended"><td>Recommended</td><td>$290,000</td><td>Priced just under the best comp, 3258 S Zeno Court #J ($290,000, 19 days on market), which closed quickly and reflects genuine recent buyer demand at this price point for the exact same floor plan</td></tr>
+      <tr><td>Test the Ceiling</td><td>$299,900</td><td>Carries some risk given seasonal timing and the nearby Eldorado #J unit, which has been sitting at $315,000 without a contract</td></tr>
+    </table>
+
+    <p><strong>Recommended List Price: $290,000</strong> — with an anticipated sale price of $280,000 to $285,000 after negotiation. Now that the unit has been viewed, the newer HVAC and kitchen appliances, combined with a similar aesthetic condition to the Zeno Court comp, support pricing right in line with that best comp.</p>
+
+    <div class="callout">
+      <p><strong>Setting Expectations for Negotiation:</strong> Given the season, it may be reasonable to expect some negotiation, whether on price, closing costs, or minor repair credits after inspection. That's fairly typical for this time of year rather than a reflection on the listing itself. Building a modest cushion into the initial list price can leave room to negotiate without landing below the value range suggested by the Zeno Court sale.</p>
+    </div>
+
+    <h2 class="section-title">Conclusion &amp; Suggested Next Steps</h2>
+    <p>3258 S Waco Court #J is reasonably well supported by the strongest available comp, 3258 S Zeno Court #J — same complex, same square footage, sold in 19 days at $290,000. That sale, along with a broader market showing some signs of softening (a handful of 200+ day listings, and a same-size competitor that hasn't yet sold at $315,000), points toward a recommended list price of $290,000, with an anticipated sale price of $280,000 to $285,000.</p>
+
+    <ul class="next-steps">
+      <li>Condition has been confirmed in person — good overall shape with newer HVAC and kitchen appliances, and a similar aesthetic condition to the Zeno Court comp.</li>
+      <li>Consider moving toward listing sooner rather than later, since the summer buyer pool tends to thin as August approaches.</li>
+      <li>Price at $290,000 to align with the Zeno Court comp while leaving some room for negotiation toward the anticipated $280,000–$285,000 sale price.</li>
+      <li>Treat the Eldorado Place #J list price as a data point to watch rather than a benchmark, since it hasn't yet resulted in a sale at that level.</li>
+      <li>If the listing passes 30 days without a contract, it may be worth revisiting pricing — the data here suggests listings that sit longer sometimes need a bigger adjustment down the line.</li>
+    </ul>
+
+  </div>
+
+  <div class="footer">
+    <div class="tagline">Helping You Find Your Place.</div>
+    Freedle And Associates &nbsp;|&nbsp; gofreedle.com
+  </div>
+
+</div>
+</body>
+</html>
