@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Seller's Guide to the Contract Process | 3258 S Waco Court #J</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #5EA1C3;
+    --gold: #FFD372;
+    --gray: #575B5C;
+    --tan: #85714D;
+    --navy: #3057A7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    color: var(--gray);
+    background: #FBFBFA;
+    line-height: 1.6;
+  }
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 0 0 60px 0;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+    padding: 40px 48px;
+    color: #ffffff;
+  }
+  .header .eyebrow {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0 0 6px 0;
+  }
+  .header .sub {
+    font-size: 15px;
+    font-weight: 300;
+    color: #EAF3F8;
+  }
+  .header .prepared {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #D6E8F1;
+  }
+  .content { padding: 40px 48px 0 48px; }
+  h2.section-title {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 10px;
+    margin: 44px 0 20px 0;
+  }
+  h3.sub-title {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--gray);
+    margin: 26px 0 10px 0;
+  }
+  p { font-size: 14.5px; margin: 0 0 14px 0; }
+  .lead {
+    font-size: 15.5px;
+    color: var(--gray);
+  }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    gap: 14px;
+    margin: 24px 0 8px 0;
+  }
+  .timeline .phase-card {
+    flex: 1;
+    background: #F3F9FB;
+    border-top: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 16px 16px;
+  }
+  .timeline .phase-card.phase-2 { border-top-color: var(--gold); background: #FFFBF1; }
+  .timeline .phase-card.phase-3 { border-top-color: var(--navy); background: #F3F5FA; }
+  .timeline .phase-num {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--tan);
+    margin-bottom: 4px;
+  }
+  .timeline .phase-title {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .timeline .phase-desc { font-size: 12.5px; color: var(--gray); }
+
+  /* Concept callouts */
+  .callout {
+    background: #F3F9FB;
+    border-left: 4px solid var(--blue);
+    padding: 18px 22px;
+    margin: 18px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout-tan { border-left-color: var(--tan); background: #FBF7ED; }
+  .callout-navy { border-left-color: var(--navy); background: #F3F5FA; }
+
+  .concept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 18px 0;
+  }
+  .concept-box {
+    border-radius: 6px;
+    padding: 18px 20px;
+  }
+  .concept-box.terminate { background: #FDF1F1; border-top: 4px solid #C7625A; }
+  .concept-box.objection { background: #FFFBF1; border-top: 4px solid var(--gold); }
+  .concept-box .concept-label {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .concept-box.terminate .concept-label { color: #A8433C; }
+  .concept-box.objection .concept-label { color: var(--tan); }
+  .concept-box p { font-size: 13.5px; margin-bottom: 0; }
+
+  /* Responsibility table */
+  table.roles {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 6px 0;
+    font-size: 13.5px;
+  }
+  table.roles th {
+    background: var(--navy);
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 12px;
+    text-align: left;
+    width: 16%;
+  }
+  table.roles td {
+    padding: 12px;
+    border-bottom: 1px solid #ECECEC;
+    vertical-align: top;
+  }
+  table.roles tr:nth-child(even) td { background: #F9FBFC; }
+
+  ul.key-points { margin: 0 0 14px 0; padding-left: 20px; }
+  ul.key-points li { font-size: 14.5px; margin-bottom: 8px; }
+
+  /* Glossary */
+  table.glossary {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 13.5px;
+  }
+  table.glossary th {
+    background: var(--blue);
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    padding: 9px 10px;
+    text-align: left;
+  }
+  table.glossary td {
+    padding: 10px;
+    border-bottom: 1px solid #ECECEC;
+  }
+  table.glossary tr:nth-child(even) td { background: #F9FBFC; }
+  table.glossary td:first-child { font-weight: 500; color: var(--navy); width: 30%; }
+
+  .checklist { margin: 0; padding-left: 0; list-style: none; }
+  .checklist li {
+    font-size: 14.5px;
+    padding: 10px 0 10px 30px;
+    position: relative;
+    border-bottom: 1px solid #ECECEC;
+  }
+  .checklist li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-weight: 700;
+  }
+
+  .footer {
+    margin-top: 50px;
+    padding: 26px 48px;
+    background: var(--gray);
+    color: #E7E7E7;
+    font-size: 12.5px;
+    text-align: center;
+  }
+  .footer .tagline {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--gold);
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="eyebrow">Seller Preparation Guide</div>
+    <h1>What Happens After We Get an Offer</h1>
+    <div class="sub">3258 S Waco Court #J &nbsp;•&nbsp; Aurora, CO 80013, Stone Canyon</div>
+    <div class="prepared">Prepared by Freedle And Associates &nbsp;|&nbsp; July 10, 2026</div>
+  </div>
+
+  <div class="content">
+
+    <p class="lead">Once an offer comes in, we'll typically negotiate a counterproposal together, adjusting price, dates, and a few terms before both sides sign. From the moment we're both signed, closing generally happens in about 30 days. Here's how that window tends to unfold.</p>
+
+    <h2 class="section-title">The Big Picture</h2>
+    <div class="timeline">
+      <div class="phase-card phase-1">
+        <div class="phase-num">Phase 1</div>
+        <div class="phase-title">Due Diligence &amp; Inspection</div>
+        <div class="phase-desc">Disclosures, title work, inspection, and insurance shopping. Roughly the first 1–2 weeks.</div>
+      </div>
+      <div class="phase-card phase-2">
+        <div class="phase-num">Phase 2</div>
+        <div class="phase-title">Appraisal &amp; Loan</div>
+        <div class="phase-desc">Lender orders the appraisal and finalizes loan approval. Overlaps with Phase 1 and runs into week 3.</div>
+      </div>
+      <div class="phase-card phase-3">
+        <div class="phase-num">Phase 3</div>
+        <div class="phase-title">Closing</div>
+        <div class="phase-desc">All deadlines cleared, repairs completed, we sign and close. Typically around day 30.</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Phase 1: Due Diligence &amp; Inspection</h2>
+    <table class="roles">
+      <tr><th>Seller</th><td>You'll fill out a Seller's Property Disclosure and provide any documentation on past repairs or known issues with the unit. For the HOA documents, our preference is to let the title company gather them (about $125). That shifts both the effort and the liability for making sure nothing is missing onto the title company and the HOA, rather than resting on you.</td></tr>
+      <tr><th>Title Company</th><td>Pulls the HOA/association documents, works to clear any liens or encumbrances ahead of closing, and issues the title insurance policy on your behalf.</td></tr>
+      <tr><th>Buyer</th><td>Schedules a professional inspection and can request repairs based on what's found. Given this is a newer condo with recently updated HVAC and kitchen appliances, we'd expect any requests to be fairly minor. The buyer will also shop for a homeowner's insurance quote during this window to confirm coverage is available and reasonably priced.</td></tr>
+    </table>
+
+    <h2 class="section-title">Phase 2: Appraisal &amp; Loan</h2>
+    <table class="roles">
+      <tr><th>Lender</th><td>Orders a third-party appraisal to confirm the home's value supports the loan amount. At the price we're discussing, we wouldn't expect any issues here.</td></tr>
+      <tr><th>Lender</th><td>Finalizes underwriting and loan approval, evaluating both the buyer's qualifications and the property itself.</td></tr>
+    </table>
+
+    <h2 class="section-title">Phase 3: Closing</h2>
+    <p>Once every deadline has passed or been resolved and any agreed-upon repairs are complete, we move to closing. You'll sign the closing documents, hand over keys and access items, and the sale is final.</p>
+
+    <h2 class="section-title">Financing Types We Can Accept</h2>
+    <p>Stone Canyon is approved for VA loans. It is not on the FHA-approved complex list, but an FHA spot approval is available, which carries roughly the same qualifications as a conventional loan, so it shouldn't meaningfully narrow the buyer pool.</p>
+    <div class="callout">
+      <p><strong>Track record:</strong> In the last six months, we've seen conventional, FHA, and VA loans all close successfully on units within the complex. That gives us good confidence to advertise and accept offers using any of these three loan types.</p>
+    </div>
+
+    <h2 class="section-title">Two Terms Worth Knowing</h2>
+    <p>Almost everything in the contract timeline comes down to one of these two types of deadlines:</p>
+    <div class="concept-grid">
+      <div class="concept-box terminate">
+        <div class="concept-label">Termination Deadline</div>
+        <p>This is the buyer's window to simply walk away and get their earnest money back, no negotiation required. If they don't act by this date, that right expires.</p>
+      </div>
+      <div class="concept-box objection">
+        <div class="concept-label">Objection Deadline</div>
+        <p>This is the buyer's window to ask for a change or repair. We then need a signed resolution agreement from both sides by the resolution deadline, or the contract automatically terminates and earnest money goes back to the buyer.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Once We're Under Contract</h2>
+    <div class="callout callout-navy">
+      <p>This is the most important thing to understand about the process: the buyer has several built-in opportunities to terminate the contract along the way (inspection, appraisal, financing, title, and more). You, as the seller, generally do not have that same flexibility once we're signed. You can decline to make repairs or offer concessions, but if the buyer still wants to move forward, they have the right to do so. Because of that, it's worth being genuinely ready to sell before we countersign anything.</p>
+    </div>
+
+    <h2 class="section-title">A Few Other Things to Have on Your Radar</h2>
+    <ul class="key-points">
+      <li><strong>Earnest money.</strong> Held in trust by the title company on behalf of both parties. It's returned to the buyer if they terminate properly under a deadline; it can become yours if the buyer defaults without a valid reason.</li>
+      <li><strong>The final walk-through.</strong> The buyer has the right to walk through the property shortly before closing to confirm the condition hasn't changed and that any agreed repairs were completed.</li>
+      <li><strong>Closing costs.</strong> As the seller, expect to cover items like the HOA status letter fee, any record change fee, prorated HOA dues, and your side of closing/title fees, in addition to commission.</li>
+      <li><strong>Possession and keys.</strong> We'll confirm a possession date and time in the contract. At closing, you'll need to provide keys, garage remotes, and any access codes.</li>
+      <li><strong>Utilities.</strong> Plan to keep utilities on through closing and coordinate the transfer or final readings once the sale is complete.</li>
+      <li><strong>Marketing status.</strong> Once we're under contract, the listing typically moves to "pending" and active showings stop, so it's worth having your timeline (movers, next home, etc.) roughly mapped out.</li>
+    </ul>
+
+    <h2 class="section-title">Estimated Net Proceeds</h2>
+    <p>Land Title Guarantee Company put together a net sheet estimate across a few possible sale prices, using a sample closing date of September 4, 2026. These numbers are a helpful planning tool, but they're estimates only, actual fees can shift slightly based on the final contract terms, closing date, and title conditions.</p>
+    <table class="glossary">
+      <tr><th>Line Item</th><th>$280,000</th><th>$285,000</th><th>$290,000</th></tr>
+      <tr><td>Sales Price</td><td>$280,000.00</td><td>$285,000.00</td><td>$290,000.00</td></tr>
+      <tr><td>Owner's Title Insurance (OEC)</td><td>$1,682.00</td><td>$1,691.00</td><td>$1,703.00</td></tr>
+      <tr><td>Closing Fee (Seller's Share)</td><td>$200.00</td><td>$200.00</td><td>$200.00</td></tr>
+      <tr><td>Water/Sewer Escrow</td><td>$400.00</td><td>$400.00</td><td>$400.00</td></tr>
+      <tr><td>Prorated Property Tax (through 9/4/26)</td><td>$1,282.51</td><td>$1,282.51</td><td>$1,282.51</td></tr>
+      <tr><td>Seller's Agent Commission (3.2%)</td><td>$8,960.00</td><td>$9,120.00</td><td>$9,280.00</td></tr>
+      <tr><td>Buyer's Agent Commission (2.8%)</td><td>$7,840.00</td><td>$7,980.00</td><td>$8,120.00</td></tr>
+      <tr><td>Association Document Fee</td><td>$90.00</td><td>$90.00</td><td>$90.00</td></tr>
+      <tr><td>Inspection Allowance</td><td>$2,500.00</td><td>$2,500.00</td><td>$2,500.00</td></tr>
+      <tr style="font-weight:600;"><td>Estimated Due to Seller</td><td>$257,045.49</td><td>$261,736.49</td><td>$266,424.49</td></tr>
+    </table>
+    <div class="callout callout-tan">
+      <p>Since we're anticipating a sale price in the $280,000–$285,000 range, expect net proceeds landing somewhere around $257,000 to $262,000, before any inspection-related credits or adjustments are finalized.</p>
+    </div>
+
+    <h2 class="section-title">Quick Deadline Glossary</h2>
+    <table class="glossary">
+      <tr><th>Deadline</th><th>What It Means</th></tr>
+      <tr><td>Inspection Objection</td><td>Buyer's window to request repairs based on the inspection findings.</td></tr>
+      <tr><td>Inspection Resolution</td><td>Deadline for both sides to sign off on any agreed repairs, or the contract terminates.</td></tr>
+      <tr><td>Appraisal Deadline</td><td>Date by which the buyer's appraisal must be completed.</td></tr>
+      <tr><td>Appraisal Objection</td><td>Buyer's window to raise concerns if the appraised value comes in under the purchase price.</td></tr>
+      <tr><td>Title Objection</td><td>Buyer's window to flag any title issues uncovered during the title search.</td></tr>
+      <tr><td>Loan/Financing Deadlines</td><td>A series of dates confirming the buyer's loan application, terms, and final approval are on track.</td></tr>
+      <tr><td>Closing Date</td><td>The day ownership officially transfers and funds are disbursed.</td></tr>
+    </table>
+
+    <h2 class="section-title">What To Expect From Us</h2>
+    <ul class="checklist">
+      <li>We'll walk you through the counterproposal terms before anything is signed, including price, dates, and any conditions worth negotiating.</li>
+      <li>We'll flag any inspection or appraisal issues as soon as they come in and help you weigh whether to negotiate or hold firm.</li>
+      <li>Mari, our transaction coordinator, will help track every deadline in the background so nothing slips.</li>
+      <li>We'll confirm the closing date, walk-through timing, and possession details with you well ahead of closing day.</li>
+    </ul>
+
+  </div>
+
+  <div class="footer">
+    <div class="tagline">Helping You Find Your Place.</div>
+    Freedle And Associates &nbsp;|&nbsp; gofreedle.com &nbsp;|&nbsp; 720-934-6583
+  </div>
+
+</div>
+</body>
+</html>
